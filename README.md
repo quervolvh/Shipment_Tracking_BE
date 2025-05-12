@@ -36,8 +36,8 @@ This project is structured using **Domain-Driven Design (DDD)** principles with 
 - ASP.NET Core Web API
 - Clean Architecture / Domain-Driven Design (DDD)
 
+```
 ---
-
 ## 📂 Project Structure
 
 /YourProject
@@ -60,6 +60,7 @@ This project is structured using **Domain-Driven Design (DDD)** principles with 
 ├── Program.cs # App startup
 └── README.md # This file
 ---
+```
 
 ## 🛠️ Setup & Run
 

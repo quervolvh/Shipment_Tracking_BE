@@ -12,8 +12,6 @@ public class ShipmentsRepository : IShipmentRepository
         _context = context;
     }
 
-    // POST /shipments
-    [HttpPost]
     public async Task<Result<Shipment>> CreateShipment([FromBody] ShipmentDto form)
     {
         if (!form.Carrier.HasValue)
@@ -74,15 +72,12 @@ public class ShipmentsRepository : IShipmentRepository
 
     }
 
-    // GET /shipments/{id}
-    [HttpGet("{id}")]
     public async Task<Result<Shipment>> GetShipment(int id)
     {
         var shipment = await _context.Shipments.FindAsync(id);
         return shipment == null ? Result<Shipment>.Failure("Not Found") : Result<Shipment>.Success(shipment);
     }
 
-    [HttpGet]
     public async Task<Result<ShipmentListModel>> GetShipments(ShipmentStatus? status, int? carrier, int? page)
     {
 
@@ -123,7 +118,6 @@ public class ShipmentsRepository : IShipmentRepository
         });
     }
 
-    [HttpPut("{id}")]
     public async Task<Result<Shipment>> UpdateShipment(int id, string? status)
     {
         if (status == null)

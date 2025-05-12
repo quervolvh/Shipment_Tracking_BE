@@ -22,8 +22,7 @@ public class ProductsRepository : IProductRepository
         var product = await _context.Products.FindAsync(id);
         return product == null ? Result<Product>.Failure("Not found") : Result<Product>.Success(product);
     }
-
-    [HttpGet]
+    
     public async Task<Result<List<Product>>> GetProducts(decimal? minPrice, decimal? maxPrice)
     {
         var query = _context.Products.AsQueryable();
