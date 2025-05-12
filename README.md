@@ -101,26 +101,26 @@ Here, you can:
 
 #### 📦 Shipment Endpoints
 
-| Method | Route                    | Description                           |
-|--------|--------------------------|---------------------------------------|
-| GET    | `/api/shipments`         | Retrieve all shipments                |
-| POST   | `/api/shipments`         | Create a new shipment                 |
-| PUT   | `/api/shipments`          | Update a shipment                     |
-| GET    | `/api/shipments?status=InTransit&carrierId=1` | Filter shipments by status and carrier |
+| Method | Route                    | Description                             |
+|--------|--------------------------|-----------------------------------------|
+| GET    | `/shipments`             |  Retrieve all shipments                 |
+| POST   | `/shipments`             | Create a new shipment                   |
+| PUT   | `/shipments`              | Update a shipment                       |
+| GET    | `/shipments?status=InTransit&carrierId=1` | Filter shipments by status and carrier |
 
 #### 🛒 Product Endpoints
 
-| Method | Route             | Description         |
-|--------|-------------------|---------------------|
-| GET    | `/api/products`   | Retrieve all products|
-| POST   | `/api/products`   | Add a new product   |
+| Method | Route             | Description          |
+|--------|-------------------|----------------------|
+| GET    | `/products`   | Retrieve all products    |
+| POST   | `/products`   | Add a new product        |
 
 #### 🚚 Carrier Endpoints
 
-| Method | Route            | Description         |
-|--------|------------------|---------------------|
-| GET    | `/api/carriers`  | Retrieve all carriers|
-| POST   | `/api/carriers`  | Add a new carrier   |
+| Method | Route            | Description          |
+|--------|------------------|----------------------|
+| GET    | `/carriers`  | Retrieve all carriers    |
+| POST   | `/carriers`  | Add a new carrier        |
 
 ### ✅ Notes
 
