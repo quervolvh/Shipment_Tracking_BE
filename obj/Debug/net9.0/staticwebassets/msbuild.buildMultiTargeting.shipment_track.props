@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/shipment_track.props" />
+</Project>

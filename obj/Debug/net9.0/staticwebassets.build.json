@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "6Dr11oR5EjQmhN4oLP0ypQNhBbHxuUC7DXpKbZlcsf0=",
+  "Source": "shipment_track",
+  "BasePath": "_content/shipment_track",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
